@@ -1,5 +1,13 @@
 # Sentir
 
+# UI Colors
+
+success-text:             #3AADFE 
+info-text:                #FB99D6 
+warning-text:             #FFC742 
+danger-text:              #FF6F6F 
+
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
 ## Development server

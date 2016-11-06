@@ -19,12 +19,12 @@
       "mobile": false,
       "styles": [
         "styles.scss",
-        "variables.scss",
         "bootstrap.scss"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/ng2-datepicker/dist/ng2-datepicker.js"
         ],
       "environments": {
         "source": "environments/environment.ts",

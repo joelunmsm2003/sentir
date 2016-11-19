@@ -1,11 +1,30 @@
 # Sentir
 
+
+De ahí pestañas con diferentes áreas den trabajo
+
+1. Planificación familiar
+
+2. Control prenatal
+
+3. Psicoprofilaxis obstetrica
+
+4. Estimulacion prenatal
+
+5. Ginecologia
+
+Dentro de ginecologia
+
+5.1 tamizaje de cancer de cuello uterino
+
+5.2 cancer de mama
+
+
+
+
 # UI Colors
 
-success-text:             #3AADFE 
-info-text:                #FB99D6 
-warning-text:             #FFC742 
-danger-text:              #FF6F6F 
+verde : #06d6b4
 
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.

@@ -1,66 +1,55 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Sintiendote Crecer</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+			<li routerLink="/control"><a href="#">Control Prenatal</a></li>
+			<li routerLink="/planificacion"><a href="#">Planificacion</a></li>
+			<li routerLink="/psico"><a href="#">Psicoprofilaxis Obstetrica</a></li>
+			<li routerLink="/estimulacion"><a href="#">Estimulacion Prenatal</a></li>
+			<li routerLink="/gineco" class="dropdown">
+			<a  href="#"class="dropdown-toggle" data-toggle="dropdown">Ginecologia
+			<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+			<li routerLink="/tamizaje"><a href="#">Tamizaje</a></li>
+			<li routerLink="/cancer"><a href="#">Cancer</a></li>
+
+			</ul>
+			</li>
+      </ul>
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Blog</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Login</a></li>
+       
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
 
 
-<div class='container'>
-
-		<br>
 
 
-		<div class="btn-group" style='float:right;'>
-
-		<a class="btn btn-primary btn-lg">Login</a>
-
-		<a class="btn btn-primary btn-lg">Blog</a>
-		</div>
-
-		<br><br>
-
-
-
-
-		<div class="row">
-
-
-		<div class="col-md-6">
-
-
-		<h1 class='text-success '>Sintiendote Crecer</h1>
-
-
-		<h2 class='text-info'> Te ayudamos a cuidar tu bebe antes de nazca por especialistas obstetras</h2>
-
-		<br>
-		
-		<datepicker [(ngModel)]="date" [expanded]="true"></datepicker>
-
-			Selected date is: {{ date }}
-
-
-		<h3 class='text-success '>Ingrese el ultimo dia de tu regla</h3>
-
-
-		</div>
-
-
-		<div class="col-md-6">
-
-		<img src='assets/pregnancy-with-hearts.svg' class='woman'>
-		
-		</div>
-
-
-		
-
-
-
-		</div>
-
-
-	
-
-
-</div>
+   <router-outlet></router-outlet>
 
 
 

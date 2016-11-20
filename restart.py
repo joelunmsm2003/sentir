@@ -13,6 +13,6 @@ else:
 
 	print 'Starting angular-cli...'
 
-	os.system("ng serve&")
+	os.system("ng serve --host 0.0.0.0 --port 4201 --live-reload-port 49153")
 
 

@@ -1,8 +1,3 @@
-export class Hero {
-  id: number;
-  nombre: string;
-}
-
 export class Alumnos {
 
 	id: number;

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Alumnos, Hero } from '../hero';
+import { Headers, Http, Response } from '@angular/http';
+import { AlumnosService } from '../alumnos.service';
+
 
 @Component({
   selector: 'app-alumnos',
@@ -7,9 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlumnosComponent implements OnInit {
 
-  constructor() { }
+	alumnos: Alumnos[] = [];
 
-  ngOnInit() {
+    constructor(
+   	private http: Http,private alumnosService:AlumnosService) {}
+
+  ngOnInit(): void {
+    this.alumnosService.getAlumnos()
+      .then(data => 
+
+      	this.alumnos = data
+
+
+      	);
   }
+
 
 }

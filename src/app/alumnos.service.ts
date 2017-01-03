@@ -18,6 +18,12 @@ export class AlumnosService {
       .then(response => response.json())
   }
 
+   getAlumno(id: number): Promise<Alumnos> {
+    return this.getAlumnos()
+      .then(data => data.find(alumnos => alumnos.id === id));
+  }
+
+
 
 }
 

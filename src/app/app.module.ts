@@ -25,6 +25,10 @@ import { AlumnoidComponent } from './alumnoid/alumnoid.component'
       {
         path: 'alumnos',
         component: AlumnosComponent
+      },
+      {
+        path: 'alumno/:id',
+        component: AlumnoidComponent
       }
     ])
   ],
